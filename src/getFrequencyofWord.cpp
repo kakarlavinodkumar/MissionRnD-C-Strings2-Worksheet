@@ -13,6 +13,22 @@ Note: Dont modify original str or word,Just return count ,Spaces can also be par
 #include <stdlib.h>
 
 int count_word_in_str_way_1(char *str, char *word){
+	int index, index1, count;
+	if (str&&word)
+	{
+		for (index = index1 = count = 0; str[index] != '\0'; index++)
+		{
+			if (str[index] == word[index1])
+			{
+				++index1;
+				if (word[index1] == '\0')
+					count++;
+			}
+			else
+				index1 = 0;
+		}
+		return count;
+	}
 	return 0;
 }
 
