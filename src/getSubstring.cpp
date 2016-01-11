@@ -20,7 +20,7 @@ original String
 char * get_sub_string(char *str, int i, int j){
 	char *res;
 	int index;
-	if (i > j||str==NULL||i<=0||j<=0)
+	if (i > j||str==NULL)
 		return NULL;
 	res = (char *)malloc(sizeof(char)*(j - i + 2));
 	for (index = 0; index < j - i + 1; index++)
