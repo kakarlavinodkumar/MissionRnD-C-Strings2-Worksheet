@@ -22,7 +22,6 @@ NOTES: Don't create new string , Dont return anything ,you have been given two p
 
 void count_vowels_and_consonants(char *str,int *consonants, int *vowels){
 	int index;
-	char *res;
 	vowels[0] = 0;
 	consonants[0] = 0;
 	if (str)
